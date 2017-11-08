@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MINE SWEEPER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="initGame()">
+    <h1>MINE SWEEPER</h1>
+    <p>TIME:
+        <span class="time"></span> Seconds</p>
+    <div class="i">
+        <table>
+            <tbody class="board" oncontextmenu="return false;"></tbody>
+        </table>
+    </div>
+    <div class="controlPanel">
+        <button onclick="setLevel(0)">Begginer</button>
+        <button onclick="setLevel(1)">Medium</button>
+        <button onclick="setLevel(2)">Expert</button>
+        <button onclick="initGame()">restart</button>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

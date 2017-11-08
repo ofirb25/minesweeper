@@ -1,0 +1,65 @@
+body {
+    font-size:10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #070000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #070000, #4C0001, #070000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h1,p {
+    color: white;
+}
+table {
+    text-align: center;
+    margin: auto;
+}
+.cell {
+    height:20px;
+    width:20px;
+    color : transparent;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 5px
+}
+
+.clicked {
+    color: red;
+    transition: background 500ms;
+    background: rgb(155, 155, 155);
+    font-weight: bold;
+  
+}
+
+.flagged {
+        background-image: url(../img/flag.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    
+}
+
+.controlPanel {
+    margin-top:20px;
+}
+.controlPanel button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border:none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.controlPanel button:focus {
+    outline: none;    
+}
